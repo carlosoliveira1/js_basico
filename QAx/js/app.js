@@ -1,12 +1,7 @@
-// console.log('Olá, javascript')
-
-// var nome = 'Mestre Yoda'
-// var idade = 100
-// var jedi = true
-
-// console.log(nome)
-// console.log(idade)
-// console.log(jedi)
-
-var username = "Fernando"
-document.getElementById('user-name').innerHTML = username
+const App = new Vue({
+    el: '#app',
+    data: {
+        title: 'Star Wars Lego',
+        userName: 'Carlos'
+    }
+})
