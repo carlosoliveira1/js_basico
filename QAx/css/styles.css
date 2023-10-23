@@ -5,6 +5,12 @@ body {
    background-position: center;
    background-color: #111;
    color: #CCC;
+   font-family: 'Handlee', cursive;;
+}
+
+h1 {
+   font-family: 'Acme', sans-serif;
+
 }
 
 #app {
@@ -69,6 +75,8 @@ input {
    border-radius: 8px;
    border: none;
    font-size: 1rem;
+   font-family: 'Handlee', cursive;
+   
 }
 
 button {
@@ -78,5 +86,6 @@ button {
    color: #111;
    font-size: 1rem;
    border: none;
+   font-family: 'Handlee', cursive;
 }
 

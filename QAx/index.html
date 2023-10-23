@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Handlee&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,15 +17,25 @@
 
     <div id="app">
 
-        <h1>{{title}}</h1>
-        <small>Olá, {{userName}}</small>
+        <div class="top" >
 
-        <form>
-            <input placeholder="Busca por nome" v-model="searchName" />
-            <button type="button" @click="search()">Buscar</button>
+            <div>
+                <h1>{{title}}</h1>
+                <small>Olá, {{userName}}</small>
+    
+            </div>
+    
+    
+            <form>
+                <input placeholder="Busca por nome" v-model="searchName" />
+                <button type="button" @click="search()">Buscar</button>
+    
+            </form>
+    
 
-        </form>
+        </div>
 
+     
         <div class="characters">
             <div class="item" v-for="item of characters">
                 <img :src="item.avatar" :alt="item.nome" />
